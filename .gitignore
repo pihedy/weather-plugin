@@ -52,7 +52,6 @@ src/classes/Vendor/
 src/vendor/
 src/pamut_functions.php
 src/client/components.d.ts
-assets/js/*
 assets/css/*
 assets/images/intl-tel-input/*
 !assets/css/editor.css
