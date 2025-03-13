@@ -49,7 +49,7 @@ $Require = \Closure::bind(static function (mixed $identifier, string $file): voi
 
     $GLOBALS['_wpcm_autoload_files'][$identifier] = true;
 
-    require __DIR__ . $file;
+    require $file;
 }, null, null);
 
 $srcDir = __DIR__ . '/src';
