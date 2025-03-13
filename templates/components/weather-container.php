@@ -13,4 +13,4 @@ $city = get_query_var('location');
 
 ?>
 
-<div id="weather-container" data-location="<?php echo esc_attr($city); ?>">
+<div id="weather-container" data-location="<?php echo esc_attr($city); ?>" style="text-align: center;">

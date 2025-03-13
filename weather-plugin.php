@@ -13,6 +13,13 @@
 declare(strict_types=1);
 
 /**
+ * Defines the OpenWeatherMap API key constant.
+ */
+if (!defined('WPCM_OPENWEATHERMAP_API_KEY')) {
+    wp_die('Please declare the constant "WPCM_OPENWEATHERMAP_API_KEY" in the wp-config file with your OpenWeatherMap API key.');
+}
+
+/**
  * Defines the absolute path to the main plugin file for use in other plugin components.
  */
 define('WPCM_PLUGIN_FILE', __FILE__);

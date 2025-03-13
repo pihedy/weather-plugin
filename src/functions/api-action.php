@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use WPCM\Repository\WeatherRepository;
+
 /**
  * Registers a REST API route for retrieving weather information by city.
  */
@@ -32,6 +34,8 @@ function getLoactionWeather(WP_REST_Request $request): void
         if ($location === null) {
             throw new Exception('Location is required!');
         }
+
+        $response['data'] = (new WeatherRepository(WPCM_OPENWEATHERMAP_API_KEY))->getWeatherByCity($location);
     } catch (Exception $e) {
         $response['status'] = ['message' => $e->getMessage(), 'code' => 500];
     }
