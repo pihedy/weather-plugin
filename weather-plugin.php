@@ -13,6 +13,16 @@
 declare(strict_types=1);
 
 /**
+ * Defines the absolute path to the main plugin file for use in other plugin components.
+ */
+define('WPCM_PLUGIN_FILE', __FILE__);
+
+/**
+ * Defines the absolute path to the plugin's directory for use in other plugin components.
+ */
+define('WPCM_PLUGIN_DIR', plugin_dir_path(__FILE__));
+
+/**
  * Recursively scans a directory for PHP files and populates the files array.
  *
  * @param string $dir The directory path to scan.
