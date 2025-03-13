@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: Weather Plugin (Centrál Mediacsoport Zrt. feladat)
  * Plugin URI:  https://github.com/pihedy/weather-plugin
